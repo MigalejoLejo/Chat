@@ -15,41 +15,9 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            TextField("Nombre de usuario", text: $mail)
-                .padding()
-                .background(Color.gray.opacity(0.1)) // Un ligero fondo gris
-                .cornerRadius(5)
-                .padding(.horizontal)
-
-            SecureField("Contraseña", text: $password)
-                .padding()
-                .background(Color.gray.opacity(0.1)) // Un ligero fondo gris
-                .cornerRadius(5)
-                .padding(.horizontal)
-
-            Button(action: createUser) {
-                Text("Iniciar Sesión")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-            }
+            Text("Hello Boys")
         }
         .padding()
-    }
-
-    func createUser(){
-        Auth.auth().createUser(withEmail: mail, password: password) { response, error in
-            if let e = error {
-                print("🙁 A problem ocurred:" + "\n" + "\(e.localizedDescription)")
-            }
-            
-            if let _ = response {
-                    print(" Todo bien my friend")
-            }
-        }    
     }
 }
 
