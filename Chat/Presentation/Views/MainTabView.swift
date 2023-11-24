@@ -15,7 +15,7 @@ struct MainTabView: View {
             ChatView()
                 .tabItem {
                     Image("ic_home")
-                        .foregroundColor(.orange) // Cambia el color aquí
+                        .foregroundColor(.orangePwC)
 
                     Text("Inicio")
                 }
@@ -42,6 +42,6 @@ struct MainTabView: View {
                 }
                 .tag("Mensajes")
         }
-        .accentColor(.orange)
+        .accentColor(.orangePwC)
     }
 }

@@ -24,6 +24,7 @@
 		64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD12B10947900864377 /* AuthViewModel.swift */; };
 		64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD22B10947900864377 /* ChatViewModel.swift */; };
 		64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD32B10947900864377 /* LoginViewModel.swift */; };
+		64B48BD92B109A9800864377 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD82B109A9800864377 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		64B48BD12B10947900864377 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		64B48BD22B10947900864377 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		64B48BD32B10947900864377 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		64B48BD82B109A9800864377 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		647AEFF62B0F77A500C70099 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				64B48BD72B109A8900864377 /* Components */,
 				64B48BD02B10945100864377 /* ViewModel */,
 				647AF0152B0F834000C70099 /* Views */,
 			);
@@ -158,6 +161,14 @@
 				64B48BD32B10947900864377 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64B48BD72B109A8900864377 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				64B48BD82B109A9800864377 /* Colors.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4967A84A2B0F4B2D00EDA815 /* ContentView.swift in Sources */,
+				64B48BD92B109A9800864377 /* Colors.swift in Sources */,
 				647AEFFB2B0F785400C70099 /* Message.swift in Sources */,
 				64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */,
 				4967A8482B0F4B2D00EDA815 /* ChatApp.swift in Sources */,
