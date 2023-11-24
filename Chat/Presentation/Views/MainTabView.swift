@@ -8,25 +8,40 @@
 import SwiftUI
 
 struct MainTabView: View {
-    
+    @State private var selectedTab = "Inicio" // Identificador de la pestaña seleccionada
+
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             ChatView()
                 .tabItem {
-                    Label("Inicio", systemImage: "house.fill")
+                    Image("ic_home")
+                        .foregroundColor(.orange) // Cambia el color aquí
+
+                    Text("Inicio")
                 }
+                .tag("Inicio")
+
             Text("Hola2")
                 .tabItem {
-                    Label("Espacios", systemImage: "2.circle")
+                    Image("ic_spaces")
+                    Text("Espacios")
                 }
+                .tag("Espacios")
+            
             ChatView()
                 .tabItem {
-                    Label("Agenda", systemImage: "calendar")
+                    Image("ic_calendar")
+                    Text("Agenda")
                 }
+                .tag("Agenda")
+            
             ChatView()
                 .tabItem {
-                    Label("Mensajes", systemImage: "message.fill")
+                    Image("ic_messages")
+                    Text("Mensajes")
                 }
+                .tag("Mensajes")
         }
+        .accentColor(.orange)
     }
 }

@@ -19,6 +19,11 @@
 		647AEFFB2B0F785400C70099 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEFFA2B0F785400C70099 /* Message.swift */; };
 		647AF0172B0F835500C70099 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AF0162B0F835500C70099 /* LoginView.swift */; };
 		647AF01A2B0F839700C70099 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AF0192B0F839700C70099 /* AuthService.swift */; };
+		64B48BCD2B1093E100864377 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BCC2B1093E100864377 /* ChatView.swift */; };
+		64B48BCF2B1093EA00864377 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BCE2B1093EA00864377 /* MainTabView.swift */; };
+		64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD12B10947900864377 /* AuthViewModel.swift */; };
+		64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD22B10947900864377 /* ChatViewModel.swift */; };
+		64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD32B10947900864377 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		647AEFFA2B0F785400C70099 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		647AF0162B0F835500C70099 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		647AF0192B0F839700C70099 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		64B48BCC2B1093E100864377 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		64B48BCE2B1093EA00864377 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		64B48BD12B10947900864377 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		64B48BD22B10947900864377 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		64B48BD32B10947900864377 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		647AEFF62B0F77A500C70099 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				64B48BD02B10945100864377 /* ViewModel */,
 				647AF0152B0F834000C70099 /* Views */,
 			);
 			path = Presentation;
@@ -125,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				647AF0162B0F835500C70099 /* LoginView.swift */,
+				64B48BCC2B1093E100864377 /* ChatView.swift */,
+				64B48BCE2B1093EA00864377 /* MainTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +148,16 @@
 				647AF0192B0F839700C70099 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		64B48BD02B10945100864377 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64B48BD12B10947900864377 /* AuthViewModel.swift */,
+				64B48BD22B10947900864377 /* ChatViewModel.swift */,
+				64B48BD32B10947900864377 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,10 +241,15 @@
 			files = (
 				4967A84A2B0F4B2D00EDA815 /* ContentView.swift in Sources */,
 				647AEFFB2B0F785400C70099 /* Message.swift in Sources */,
+				64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */,
 				4967A8482B0F4B2D00EDA815 /* ChatApp.swift in Sources */,
+				64B48BCF2B1093EA00864377 /* MainTabView.swift in Sources */,
 				647AF01A2B0F839700C70099 /* AuthService.swift in Sources */,
+				64B48BCD2B1093E100864377 /* ChatView.swift in Sources */,
 				647AF0172B0F835500C70099 /* LoginView.swift in Sources */,
 				647AEFF92B0F783900C70099 /* User.swift in Sources */,
+				64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */,
+				64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

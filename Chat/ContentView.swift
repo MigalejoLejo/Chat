@@ -2,25 +2,25 @@
 //  ContentView.swift
 //  Chat
 //
-//  Created by Miguel Alejandro Correa Avila on 23/11/23.
+//  Created by José Daniel Chinea Marrero on 23/11/23.
 //
 
 import SwiftUI
-import FirebaseAuth
-
 
 struct ContentView: View {
-    @State private var mail: String = ""
-    @State private var password: String = ""
-
+    @StateObject var authViewModel = AuthViewModel()
+    
     var body: some View {
-        VStack {
-            Text("Hello Boys")
+        Group {
+            if authViewModel.isAuthenticated {
+                MainTabView()
+            } else {
+                LoginView()
+            }
         }
-        .padding()
+        .environmentObject(authViewModel)
     }
 }
-
 #Preview {
     ContentView()
 }
