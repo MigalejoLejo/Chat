@@ -9,19 +9,31 @@ import SwiftUI
 
 struct ChatView: View {
     @ObservedObject var chatViewModel = ChatViewModel()
+    @State private var isShowingSideMenu = false
 
     var body: some View {
-        VStack {
-            Text("ChatView")
-//            List(viewModel.messages) { message in
-//                Text(message.content)
-//                // Personaliza cada mensaje aquí...
-//            }
-
-            HStack {
-//                TextField("Escribe un mensaje..." /*, text: $viewModel.newMessageContent*/)
-                Button("Cerrar sesión") {
+        NavigationView {
+            ScrollView{
+                ZStack{
+                    VStack {
+                        Text("ChatView")
+                        ForEach(1...40, id: \.self) { _ in
+                            Text("Este es el texto que se mostrará 15 veces.")
+                        }
+                    }
+                    .customToolbar(
+                        isShowingSideMenu: $isShowingSideMenu,
+                        title: "Mensajes",
+                        showProfile: false,
+                        showSearch: true,
+                        showOptions: true,
+                        showCalendar: false,
+                        searchAction: { print("Buscar") },
+                        editAction: { print("Nuevo mensaje") },
+                        calendarAction: { print("Calendario") }
+                    )
                     
+                    SideMenuView(isShowing: $isShowingSideMenu)
                 }
             }
         }

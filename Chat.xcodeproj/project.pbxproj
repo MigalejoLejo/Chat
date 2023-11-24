@@ -25,6 +25,8 @@
 		64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD22B10947900864377 /* ChatViewModel.swift */; };
 		64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD32B10947900864377 /* LoginViewModel.swift */; };
 		64B48BD92B109A9800864377 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BD82B109A9800864377 /* Colors.swift */; };
+		64B48BDB2B109ECA00864377 /* ToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BDA2B109ECA00864377 /* ToolbarModifier.swift */; };
+		64B48BDD2B10CC7700864377 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B48BDC2B10CC7700864377 /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		64B48BD22B10947900864377 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		64B48BD32B10947900864377 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		64B48BD82B109A9800864377 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		64B48BDA2B109ECA00864377 /* ToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarModifier.swift; sourceTree = "<group>"; };
+		64B48BDC2B10CC7700864377 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				64B48BD82B109A9800864377 /* Colors.swift */,
+				64B48BDA2B109ECA00864377 /* ToolbarModifier.swift */,
+				64B48BDC2B10CC7700864377 /* SideMenuView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -258,10 +264,12 @@
 				64B48BCF2B1093EA00864377 /* MainTabView.swift in Sources */,
 				647AF01A2B0F839700C70099 /* AuthService.swift in Sources */,
 				64B48BCD2B1093E100864377 /* ChatView.swift in Sources */,
+				64B48BDD2B10CC7700864377 /* SideMenuView.swift in Sources */,
 				647AF0172B0F835500C70099 /* LoginView.swift in Sources */,
 				647AEFF92B0F783900C70099 /* User.swift in Sources */,
 				64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */,
 				64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */,
+				64B48BDB2B109ECA00864377 /* ToolbarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
