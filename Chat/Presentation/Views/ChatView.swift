@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
     @ObservedObject var chatViewModel = ChatViewModel()
-    @State private var isShowingSideMenu = false
+    @Binding var isShowingSideMenu: Bool
 
     var body: some View {
         NavigationView {
@@ -32,8 +32,6 @@ struct ChatView: View {
                         editAction: { print("Nuevo mensaje") },
                         calendarAction: { print("Calendario") }
                     )
-                    
-                    SideMenuView(isShowing: $isShowingSideMenu)
                 }
             }
         }

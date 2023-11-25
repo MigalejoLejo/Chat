@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var email: String = "test@test.com"
     @State private var password: String = "1234567"
     @EnvironmentObject var authViewModel: AuthViewModel
+    @Binding var isShowingSideMenu: Bool
+
 
 
     var body: some View {
@@ -40,7 +42,7 @@ struct LoginView: View {
         }
         .padding()
         .fullScreenCover(isPresented: $authViewModel.isAuthenticated) {
-            ChatView()
+            ChatView(isShowingSideMenu: $isShowingSideMenu)
             SecureField("Password", text: $password)
         }
     }

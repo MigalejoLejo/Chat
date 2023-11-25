@@ -12,31 +12,44 @@ struct SideMenuView: View {
 
     var body: some View {
         ZStack {
-            // Menú lateral
-
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(1...40, id: \.self) { _ in
-                    Text("Opción")
+            // Menú lateral...
+            VStack(alignment: .leading) {
+                // Botón de cierre
+                Button(action: {
+                    withAnimation {
+                        isShowing = false
+                    }
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .padding(.top, 16)
+                        .padding(.trailing, 16)
+                        .foregroundColor(.black)
                 }
-                Spacer()
+                .alignmentGuide(.leading) { d in d[.trailing] }
+                .padding(.leading, UIScreen.main.bounds.width * 0.8 - 24)
+                
+                // Aquí irían los elementos de tu menú
+                // ...
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(width: UIScreen.main.bounds.width * 0.8)
             .background(Color.white)
-            .offset(x: isShowing ? 0 : -UIScreen.main.bounds.width)
+            .offset(x: isShowing ? 0 : -UIScreen.main.bounds.width, y: 0)
             .edgesIgnoringSafeArea(.all)
+            .transition(.move(edge: .leading))
+            .animation(.easeInOut)
             
-            // Fondo translúcido que cubre el resto de la pantalla
-            GeometryReader { _ in
-                EmptyView()
-            }
-            .background(isShowing ? Color.black.opacity(0.5) : Color.clear)
-            .opacity(isShowing ? 1 : 0)
-            .onTapGesture {
-                withAnimation {
-                    isShowing = false
-                }
+            // Fondo oscurecido
+            if isShowing {
+                Color.black.opacity(0.5)
+                    .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {
+                        withAnimation {
+                            isShowing = false
+                        }
+                    }
             }
         }
-        .animation(.easeInOut)
     }
 }
