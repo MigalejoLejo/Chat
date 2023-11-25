@@ -13,8 +13,6 @@ struct LoginView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @Binding var isShowingSideMenu: Bool
 
-
-
     var body: some View {
         VStack {
             TextField("Email", text: $email)

@@ -21,6 +21,7 @@ struct ChatView: View {
                             Text("Este es el texto que se mostrará 15 veces.")
                         }
                     }
+                    .frame(maxWidth: .infinity)
                     .customToolbar(
                         isShowingSideMenu: $isShowingSideMenu,
                         title: "Mensajes",
