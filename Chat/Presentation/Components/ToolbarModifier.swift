@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CustomToolbarModifier: ViewModifier {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var isShowingSideMenu: Bool
 
     var title: String
+    var showBack: Bool
     var showProfile: Bool
     var showAddSpace: Bool
     var showSearch: Bool
@@ -25,16 +27,32 @@ struct CustomToolbarModifier: ViewModifier {
         content
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
-                    Button(action: {                
-                        withAnimation {
-                        isShowingSideMenu.toggle()
-                    } }) {
-                        Image("ic_burger_menu")
-                            .padding(6)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.grayPwC, lineWidth: 1)
-                            )
+                    
+                    if showBack {
+                        Button(action: {
+                            withAnimation {
+                                self.presentationMode.wrappedValue.dismiss()
+                            } }) {
+                                Image("ic_back")
+                                    .padding(6)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 5)
+                                            .stroke(Color.grayPwC, lineWidth: 1)
+                                    )
+                            }
+                        
+                    }else{
+                        Button(action: {
+                            withAnimation {
+                                isShowingSideMenu.toggle()
+                            } }) {
+                                Image("ic_burger_menu")
+                                    .padding(6)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 5)
+                                            .stroke(Color.grayPwC, lineWidth: 1)
+                                    )
+                            }
                     }
                     
                     if showProfile {
@@ -90,7 +108,7 @@ struct CustomToolbarModifier: ViewModifier {
 }
 
 extension View {
-    func customToolbar(isShowingSideMenu: Binding<Bool>, title: String ,showProfile: Bool = false, showAddSpace: Bool = false, showSearch: Bool = false, showOptions: Bool = false, showCalendar: Bool = false, profileAction: (() -> Void)? = nil, searchAction: (() -> Void)? = nil, editAction: (() -> Void)? = nil, calendarAction: (() -> Void)? = nil) -> some View {
-        self.modifier(CustomToolbarModifier(isShowingSideMenu: isShowingSideMenu, title: title, showProfile: showProfile, showAddSpace: showAddSpace, showSearch: showSearch, showEdit: showOptions, showCalendar: showCalendar, searchAction: searchAction, editAction: editAction, calendarAction: calendarAction))
+    func customToolbar(isShowingSideMenu: Binding<Bool>, title: String, showBack: Bool = false ,showProfile: Bool = false, showAddSpace: Bool = false, showSearch: Bool = false, showOptions: Bool = false, showCalendar: Bool = false, profileAction: (() -> Void)? = nil, searchAction: (() -> Void)? = nil, editAction: (() -> Void)? = nil, calendarAction: (() -> Void)? = nil) -> some View {
+        self.modifier(CustomToolbarModifier(isShowingSideMenu: isShowingSideMenu, title: title,showBack: showBack, showProfile: showProfile, showAddSpace: showAddSpace, showSearch: showSearch, showEdit: showOptions, showCalendar: showCalendar, searchAction: searchAction, editAction: editAction, calendarAction: calendarAction))
     }
 }

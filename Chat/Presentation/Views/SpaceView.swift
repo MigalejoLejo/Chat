@@ -8,28 +8,29 @@
 import SwiftUI
 
 struct SpaceView: View {
-
-@Binding var isShowingSideMenu: Bool
+    @Binding var isShowingSideMenu: Bool
+    let spaces: [Space] = spacesData // Asumiendo que spacesData es tu conjunto de datos
 
     var body: some View {
+
         NavigationView {
-            ScrollView{
-                ZStack{
-                    VStack {
-                        Text("Otros espacios")
-                            .bold()
-                        
-                        
+            ScrollView {
+                VStack (alignment: .leading){
+                    Text("Otros espacios")
+                        .bold()
+                    
+                    ForEach(spaces) { space in
+                        SpaceCardView(space: space, isShowingSideMenu: $isShowingSideMenu)
                     }
-                    .frame(maxWidth: .infinity)
-                    .customToolbar(
-                        isShowingSideMenu: $isShowingSideMenu,
-                        title: "Espacios",
-                        showSearch: true,
-                        searchAction: { print("Buscar") }
-                    )
                 }
+                .padding()
             }
+            .customToolbar(
+                isShowingSideMenu: $isShowingSideMenu,
+                title: "Espacios",
+                showSearch: true,
+                searchAction: { print("Buscar") }
+            )
         }
     }
 }

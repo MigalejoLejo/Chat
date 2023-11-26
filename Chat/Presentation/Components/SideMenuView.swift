@@ -103,8 +103,10 @@ struct SideMenuView: View {
                                 .frame(height: 1)
                                 .edgesIgnoringSafeArea(.horizontal)
                             
-                            SideMenuButtonView(categoryText: "Configuración", categoryImage: "ic_settings", action: { print("Configuración pulsado") })
-
+                            HStack{
+                                SideMenuButtonView(categoryText: "Configuración", categoryImage: "ic_settings", action: { print("Configuración pulsado") })
+                                Spacer()
+                            }
                         }
                     }
                     .frame(maxWidth: .infinity)
