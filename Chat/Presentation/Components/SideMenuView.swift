@@ -46,7 +46,7 @@ struct SideMenuView: View {
                             Spacer()
                         }
                         
-                        ScrollView(.vertical){
+                        ScrollView(.vertical, showsIndicators: false){
                             
                             VStack(alignment: .leading){
                                 Rectangle()
