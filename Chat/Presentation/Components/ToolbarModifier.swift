@@ -12,6 +12,7 @@ struct CustomToolbarModifier: ViewModifier {
 
     var title: String
     var showProfile: Bool
+    var showAddSpace: Bool
     var showSearch: Bool
     var showEdit: Bool
     var showCalendar: Bool
@@ -37,7 +38,10 @@ struct CustomToolbarModifier: ViewModifier {
                     }
                     
                     if showProfile {
-                        Image("avatar_placeholder").resizable().frame(width: 30, height: 30).clipShape(Circle())
+                        Image("avatar_placeholder")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .clipShape(Circle())
                     }
                     
                     Text(title)
@@ -46,20 +50,38 @@ struct CustomToolbarModifier: ViewModifier {
                 }
                 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    if showAddSpace {
+                        Button(action: { searchAction?() }) {
+                            Text("Unirse")
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundColor(.white)
+                                .padding(.vertical, 5)
+                                .padding(.horizontal, 30)
+                                .background(Color.orangePwC)
+                                .cornerRadius(5)
+                        }
+                    }
+                    
                     if showSearch {
                         Button(action: { searchAction?() }) {
-                            Image("ic_union").resizable().frame(width: 20, height: 20)
+                            Image("ic_union")
+                                .resizable()
+                                .frame(width: 20, height: 20)
                         }
                     }
 
                     if showEdit {
                         Button(action: { editAction?() }) {
-                            Image("ic_new").resizable().frame(width: 24, height: 24)
+                            Image("ic_new")
+                                .resizable()
+                                .frame(width: 24, height: 24)
                         }
                     }
                     if showCalendar {
                         Button(action: { calendarAction?() }) {
-                            Image("ic_calendar").resizable().frame(width: 24, height: 24)
+                            Image("ic_calendar")
+                                .resizable()
+                                .frame(width: 24, height: 24)
                         }
                     }
                 }
@@ -68,7 +90,7 @@ struct CustomToolbarModifier: ViewModifier {
 }
 
 extension View {
-    func customToolbar(isShowingSideMenu: Binding<Bool>, title: String, showProfile: Bool = false, showSearch: Bool = false, showOptions: Bool = false, showCalendar: Bool = false, profileAction: (() -> Void)? = nil, searchAction: (() -> Void)? = nil, editAction: (() -> Void)? = nil, calendarAction: (() -> Void)? = nil) -> some View {
-        self.modifier(CustomToolbarModifier(isShowingSideMenu: isShowingSideMenu, title: title, showProfile: showProfile, showSearch: showSearch, showEdit: showOptions, showCalendar: showCalendar, searchAction: searchAction, editAction: editAction, calendarAction: calendarAction))
+    func customToolbar(isShowingSideMenu: Binding<Bool>, title: String ,showProfile: Bool = false, showAddSpace: Bool = false, showSearch: Bool = false, showOptions: Bool = false, showCalendar: Bool = false, profileAction: (() -> Void)? = nil, searchAction: (() -> Void)? = nil, editAction: (() -> Void)? = nil, calendarAction: (() -> Void)? = nil) -> some View {
+        self.modifier(CustomToolbarModifier(isShowingSideMenu: isShowingSideMenu, title: title, showProfile: showProfile, showAddSpace: showAddSpace, showSearch: showSearch, showEdit: showOptions, showCalendar: showCalendar, searchAction: searchAction, editAction: editAction, calendarAction: calendarAction))
     }
 }

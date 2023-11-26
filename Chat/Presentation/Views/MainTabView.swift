@@ -14,7 +14,7 @@ struct MainTabView: View {
     var body: some View {
         ZStack{
             TabView(selection: $selectedTab) {
-                Text("Inicio")
+                HomeView(isShowingSideMenu: $isShowingSideMenu)
                     .tabItem {
                         Image("ic_home")
                             .foregroundColor(.orangePwC)
@@ -23,14 +23,14 @@ struct MainTabView: View {
                     }
                     .tag("Inicio")
 
-                Text("Espacios")
+                SpaceView(isShowingSideMenu: $isShowingSideMenu)
                     .tabItem {
                         Image("ic_spaces")
                         Text("Espacios")
                     }
                     .tag("Espacios")
                 
-                Text("Agenda")
+                CalendarView(isShowingSideMenu: $isShowingSideMenu)
                     .tabItem {
                         Image("ic_nav_calendar")
                         Text("Agenda")

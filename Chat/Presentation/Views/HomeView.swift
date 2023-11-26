@@ -1,22 +1,22 @@
 //
-//  ChatView.swift
+//  HomeView.swift
 //  Chat
 //
-//  Created by Daniel Chinea on 23/11/23.
+//  Created by Blue on 26/11/23.
 //
 
 import SwiftUI
 
-struct ChatView: View {
-    @ObservedObject var chatViewModel = ChatViewModel()
-    @Binding var isShowingSideMenu: Bool
+struct HomeView: View {
+
+@Binding var isShowingSideMenu: Bool
 
     var body: some View {
         NavigationView {
             ScrollView{
                 ZStack{
                     VStack {
-                        Text("ChatView")
+                        Text("Home")
                         ForEach(1...40, id: \.self) { _ in
                             Text("Este es el texto que se mostrará 15 veces.")
                         }
@@ -24,11 +24,9 @@ struct ChatView: View {
                     .frame(maxWidth: .infinity)
                     .customToolbar(
                         isShowingSideMenu: $isShowingSideMenu,
-                        title: "Mensajes",
+                        title: "Inicio",
                         showSearch: true,
-                        showOptions: true,
-                        searchAction: { print("Buscar") },
-                        editAction: { print("Nuevo mensaje") }
+                        searchAction: { print("Buscar") }
                     )
                 }
             }
