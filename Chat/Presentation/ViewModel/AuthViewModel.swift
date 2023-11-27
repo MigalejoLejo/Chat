@@ -9,6 +9,7 @@ import SwiftUI
 
 class AuthViewModel: ObservableObject {
     @Published var isAuthenticated = false
+    @Published var isRegistered = false
     
     func login(email: String, password: String) {
         AuthService.shared.signIn(email: email, password: password) { result in
@@ -22,6 +23,9 @@ class AuthViewModel: ObservableObject {
             }
         }
     }
+    
+    
+    
     
     //    func register(email: String, password: String, name: String) {
     //        AuthService.shared.signUp(email: email, password: password, name: name) { result in

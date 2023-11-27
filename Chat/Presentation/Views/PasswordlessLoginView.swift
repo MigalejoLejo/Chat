@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
-struct PaswordlessLoginView: View {
+
+struct PasswordlessLoginView: View {
     @State private var email: String = "miguelalejandro.correa.avila@pwc.com"
    
     @EnvironmentObject var authViewModel: AuthViewModel
@@ -24,6 +26,8 @@ struct PaswordlessLoginView: View {
             
             Button("Iniciar Sesión") {
                 
+                // TODO: Implement login with ActionCodeSettings
+                
             }
             .frame(maxWidth: .infinity)
             .padding()
@@ -38,6 +42,25 @@ struct PaswordlessLoginView: View {
             ChatView(isShowingSideMenu: $isShowingSideMenu)
         }
     }
+    
+    
+    /* TODO: Finish configuration
+    
+     - https://medium.com/firebase-developers/using-firebase-auths-email-link-login-with-swiftui-dd2462412163
+     - https://firebase.google.com/docs/auth/ios/email-link-auth?hl=en&authuser=0&_gl=1*7hmtf1*_ga*NTY2ODY2OTQwLjE2OTY1MDY3Njk.*_ga_CW55HF8NVT*MTcwMTA3NzkwMy4xNS4xLjE3MDEwNzc5MzcuMjYuMC4w#swift
+    
+    func ActionCodeSettings () {
+        let actionCodeSettings = FirebaseAuth.ActionCodeSettings()
+        actionCodeSettings.url = URL(string: "chat-b995d.firebaseapp.com")
+        // The sign-in operation has to always be completed in the app.
+        actionCodeSettings.handleCodeInApp = true
+        actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
+        actionCodeSettings.setAndroidPackageName("com.test.Chat",
+                                                 installIfNotAvailable: false, minimumVersion: "12")
+    }
+    
+     */
+    
 }
 
 
@@ -45,14 +68,13 @@ struct PaswordlessLoginView: View {
 
 #Preview(){
     struct Preview: View {
-        @State var contactImage: String = "avatar_placeholder"
-        @State var contactName:String = "Miguel Correa"
-        @State var contactCompany:String = "PwC Tenerife"
-        @State var lastMessage:String = "Hola como estas?"
+     
+        @State var isShowingSideMenu: Bool = true
 
         var body: some View {
             
-            Passwor(contactImage: contactImage, contactName: contactName, contactCompany: contactCompany, lastMessage: lastMessage)
+            PasswordlessLoginView(isShowingSideMenu: $isShowingSideMenu)
+                .environmentObject(AuthViewModel())
             
         }
     }
