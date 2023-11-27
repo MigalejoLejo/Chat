@@ -2,7 +2,16 @@
 //  RegisterView.swift
 //  Chat
 //
-//  Created by Miguel Alejandro Correa Avila on 27/11/23.
-//
 
-import Foundation
+
+import SwiftUI
+
+struct RegisterView: View {
+
+
+    var body: some View {
+        
+        Text("Register View")
+        
+    }
+}

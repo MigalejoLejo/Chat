@@ -54,3 +54,24 @@ struct LoginView: View {
         }
     }
 }
+
+
+#Preview(){
+    struct Preview: View {
+        @State var isShowingSideMenu: Bool = false
+       
+        var body: some View {
+            NavigationView{
+                LoginView(isShowingSideMenu: $isShowingSideMenu)
+                    .environmentObject(AuthViewModel())
+            }
+           
+        }
+        
+    }
+
+    return Preview()
+    
+}
+
+
