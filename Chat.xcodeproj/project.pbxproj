@@ -31,6 +31,8 @@
 		498C3D6D2B1495CC00EF74E6 /* ChatContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */; };
 		498C3D712B14AC2400EF74E6 /* PasswordlessLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D702B14AC2400EF74E6 /* PasswordlessLoginView.swift */; };
 		498C3D742B14C03900EF74E6 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 498C3D732B14C03900EF74E6 /* .gitattributes */; };
+		498C3D762B14E57E00EF74E6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D752B14E57E00EF74E6 /* RegisterView.swift */; };
+		498C3D782B14E78200EF74E6 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D772B14E78200EF74E6 /* RegistrationService.swift */; };
 		647AEFF32B0F764500C70099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647AEFF22B0F764500C70099 /* GoogleService-Info.plist */; };
 		647AEFF92B0F783900C70099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEFF82B0F783900C70099 /* User.swift */; };
 		647AEFFB2B0F785400C70099 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEFFA2B0F785400C70099 /* Message.swift */; };
@@ -70,6 +72,8 @@
 		498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContact.swift; sourceTree = "<group>"; };
 		498C3D702B14AC2400EF74E6 /* PasswordlessLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessLoginView.swift; sourceTree = "<group>"; };
 		498C3D732B14C03900EF74E6 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		498C3D752B14E57E00EF74E6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		498C3D772B14E78200EF74E6 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		647AEFF22B0F764500C70099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		647AEFF82B0F783900C70099 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		647AEFFA2B0F785400C70099 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 				328D539C2B12FED100BA49C7 /* SpaceDetailView.swift */,
 				498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */,
 				328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */,
+				498C3D752B14E57E00EF74E6 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				647AF0192B0F839700C70099 /* AuthService.swift */,
+				498C3D772B14E78200EF74E6 /* RegistrationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				64B48BCF2B1093EA00864377 /* MainTabView.swift in Sources */,
 				647AF01A2B0F839700C70099 /* AuthService.swift in Sources */,
 				64B48BCD2B1093E100864377 /* ChatView.swift in Sources */,
+				498C3D782B14E78200EF74E6 /* RegistrationService.swift in Sources */,
 				64B48BDD2B10CC7700864377 /* SideMenuView.swift in Sources */,
 				498C3D6D2B1495CC00EF74E6 /* ChatContact.swift in Sources */,
 				328D53952B12DFB300BA49C7 /* SideMenuButtonView.swift in Sources */,
@@ -338,6 +345,7 @@
 				647AEFF92B0F783900C70099 /* User.swift in Sources */,
 				64B48BD52B10947900864377 /* ChatViewModel.swift in Sources */,
 				328D53972B12F65800BA49C7 /* HomeView.swift in Sources */,
+				498C3D762B14E57E00EF74E6 /* RegisterView.swift in Sources */,
 				328D539B2B12F67300BA49C7 /* CalendarView.swift in Sources */,
 				64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */,
 				328D53A92B139C9900BA49C7 /* Publication.swift in Sources */,
