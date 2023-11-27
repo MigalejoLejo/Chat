@@ -13,23 +13,26 @@ struct PublicationCardView: View {
 
 
     var body: some View {
-        NavigationLink(destination: Text("Hola")) {
-            VStack{
+        NavigationLink(destination: PublicationDetailView(isShowingSideMenu: $isShowingSideMenu, publication: publication)) {
+            VStack (alignment: .leading) {
                 HStack{
-                    Image("avatar_placeholder")
+                    Image(publication.space.imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 15, height: 15)
                         .padding([.vertical, .trailing], 6)
 
-                        Text(publication.author)
+                    Text(publication.space.name)
                             .foregroundStyle(Color.black)
                             .font(.custom("", size: 12))
 
                         Text("1h")
                             .foregroundStyle(Color.gray)
                             .font(.custom("", size: 12))
+                    
+                    Spacer()
                 }
+                .padding(.top, 5)
                 
                 HStack {
                     Image("avatar_placeholder")
@@ -49,21 +52,36 @@ struct PublicationCardView: View {
                     Spacer()
                 }
                 
-                Text(publication.author)
+                Text(publication.space.description)
+                    .multilineTextAlignment(.leading)
+                    .foregroundStyle(Color.black)
+
                 
                 Rectangle()
                     .fill(Color.grayPwC)
                     .frame(height: 1)
                     .edgesIgnoringSafeArea(.horizontal)
+                    .padding(.vertical, 5)
+                
+                HStack{
+                    Spacer()
+                    Image("ic_heart")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                    Image("ic_share")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                }
+                .padding(.bottom)
             }
-
-
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 16)
         .background(Color.white)
         .cornerRadius(5)
         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
+        .frame(maxWidth: .infinity)
+
     }
 }
 

@@ -19,9 +19,11 @@ struct Publication: Identifiable {
     let likes: Int
 }
 
-let publicationData = [
-    Publication(id: UUID(), space: <#Space#>, author: "Ignacio Sanchez", authorPosition: "CEO - Iberdrola", authImage: "avatar_placeholder", imageName: nil, videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
-    Publication(id: UUID(), space: <#Space#>, author: "Ignacio Sanchez", authorPosition: "CEO - Iberdrola", authImage: "avatar_placeholder", imageName: "img_placeholder", videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
-    Publication(id: UUID(), space: <#Space#>, author: "Ignacio Sanchez", authorPosition: "CEO - Iberdrola", authImage: "avatar_placeholder", imageName: nil, videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
+let spacesExampleData = Space(id: UUID(), name: "Ibex35", memberCount: 238, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", imageName: "ibex35")
 
+
+let publicationData = [
+    Publication(id: UUID(), space: spacesExampleData, author: "Ignacio Sanchez", authorPosition: "CEO - Iberdrola", authImage: "avatar_placeholder", imageName: nil, videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
+    Publication(id: UUID(), space: spacesExampleData, author: "Josu Jon Imaz", authorPosition: "CEO - Repsol", authImage: "avatar_placeholder", imageName: "img_placeholder", videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
+    Publication(id: UUID(), space: spacesExampleData, author: "Oscar Garcia", authorPosition: "CEO - Inditex", authImage: "avatar_placeholder", imageName: nil, videoName: nil, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", likes: 12),
 ]
