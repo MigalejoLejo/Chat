@@ -15,7 +15,7 @@ struct SpaceCardView: View {
     var body: some View {
         NavigationLink(destination: SpaceDetailView(isShowingSideMenu: $isShowingSideMenu, space: space)) {
             HStack {
-                Image("avatar_placeholder") // O usa Image(space.imageName) si tienes una imagen personalizada
+                Image("avatar_placeholder")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)

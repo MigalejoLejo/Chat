@@ -10,6 +10,8 @@ import SwiftUI
 struct SpaceView: View {
     @Binding var isShowingSideMenu: Bool
     let spaces: [Space] = spacesData
+    let publications: [Publication] = publicationData
+
 
     var body: some View {
 
@@ -22,7 +24,7 @@ struct SpaceView: View {
                             .bold()
                             .padding([.top, .leading, .trailing])
                         
-                        SpaceSliderView(spaces: spaces)
+                        SpaceSliderView(spaces: spaces, publications: publications)
                     }
                     
                     VStack (alignment: .leading, spacing: 12){
@@ -41,8 +43,8 @@ struct SpaceView: View {
                             .bold()
                             .padding(.bottom, 4)
                         
-                        ForEach(spaces) { space in
-                            PublicationCardView(publication: <#T##Publication#>, isShowingSideMenu: $isShowingSideMenu)
+                        ForEach(publications) { publication in
+                            PublicationCardView(publication: publication, isShowingSideMenu: $isShowingSideMenu)
                         }
                     }
                     .padding()

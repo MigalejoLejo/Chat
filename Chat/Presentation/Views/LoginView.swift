@@ -28,7 +28,6 @@ struct LoginView: View {
                 .padding(.horizontal)
             
             Button("Iniciar Sesión") {
-                print(email + password)
                 authViewModel.login(email: email, password: password)
             }
             .frame(maxWidth: .infinity)
@@ -37,6 +36,16 @@ struct LoginView: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding(.horizontal)
+            
+//            Button("Register") {
+//                authViewModel.(email: email, password: password)
+//            }
+//            .frame(maxWidth: .infinity)
+//            .padding()
+//            .background(Color.blue)
+//            .foregroundColor(.white)
+//            .cornerRadius(10)
+//            .padding(.horizontal)
         }
         .padding()
         .fullScreenCover(isPresented: $authViewModel.isAuthenticated) {
