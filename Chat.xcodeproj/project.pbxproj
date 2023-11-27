@@ -29,6 +29,7 @@
 		498C3D6B2B1495A200EF74E6 /* ChatContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */; };
 		498C3D6D2B1495CC00EF74E6 /* ChatContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */; };
 		498C3D712B14AC2400EF74E6 /* PaswordlessLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D702B14AC2400EF74E6 /* PaswordlessLoginView.swift */; };
+		498C3D742B14C03900EF74E6 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 498C3D732B14C03900EF74E6 /* .gitattributes */; };
 		647AEFF32B0F764500C70099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647AEFF22B0F764500C70099 /* GoogleService-Info.plist */; };
 		647AEFF92B0F783900C70099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEFF82B0F783900C70099 /* User.swift */; };
 		647AEFFB2B0F785400C70099 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEFFA2B0F785400C70099 /* Message.swift */; };
@@ -66,6 +67,7 @@
 		498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactList.swift; sourceTree = "<group>"; };
 		498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContact.swift; sourceTree = "<group>"; };
 		498C3D702B14AC2400EF74E6 /* PaswordlessLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaswordlessLoginView.swift; sourceTree = "<group>"; };
+		498C3D732B14C03900EF74E6 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		647AEFF22B0F764500C70099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		647AEFF82B0F783900C70099 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		647AEFFA2B0F785400C70099 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		4967A83B2B0F4B2D00EDA815 = {
 			isa = PBXGroup;
 			children = (
+				498C3D732B14C03900EF74E6 /* .gitattributes */,
 				4967A8552B0F4C0700EDA815 /* .gitignore */,
 				4967A8462B0F4B2D00EDA815 /* Chat */,
 				4967A8452B0F4B2D00EDA815 /* Products */,
@@ -190,11 +193,8 @@
 				328D53982B12F66600BA49C7 /* SpaceView.swift */,
 				328D539A2B12F67300BA49C7 /* CalendarView.swift */,
 				328D539C2B12FED100BA49C7 /* SpaceDetailView.swift */,
-<<<<<<< HEAD
 				498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */,
-=======
 				328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */,
->>>>>>> 617a6f3f7c7791561e304983ebdd55ba0a374fe2
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498C3D742B14C03900EF74E6 /* .gitattributes in Resources */,
 				4967A84F2B0F4B2E00EDA815 /* Preview Assets.xcassets in Resources */,
 				647AEFF32B0F764500C70099 /* GoogleService-Info.plist in Resources */,
 				4967A8562B0F4C0700EDA815 /* .gitignore in Resources */,
@@ -336,11 +337,8 @@
 				328D539B2B12F67300BA49C7 /* CalendarView.swift in Sources */,
 				64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */,
 				328D53A92B139C9900BA49C7 /* Publication.swift in Sources */,
-<<<<<<< HEAD
 				498C3D712B14AC2400EF74E6 /* PaswordlessLoginView.swift in Sources */,
-=======
 				328D53AB2B14211E00BA49C7 /* PublicationDetailView.swift in Sources */,
->>>>>>> 617a6f3f7c7791561e304983ebdd55ba0a374fe2
 				328D53A72B1399CB00BA49C7 /* PublicationCardView.swift in Sources */,
 				328D53992B12F66600BA49C7 /* SpaceView.swift in Sources */,
 				64B48BDB2B109ECA00864377 /* ToolbarModifier.swift in Sources */,
