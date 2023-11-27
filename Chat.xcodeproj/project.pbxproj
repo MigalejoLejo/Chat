@@ -19,6 +19,7 @@
 		328D53A72B1399CB00BA49C7 /* PublicationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53A62B1399CB00BA49C7 /* PublicationCardView.swift */; };
 		328D53A92B139C9900BA49C7 /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53A82B139C9900BA49C7 /* Publication.swift */; };
 		328D53AB2B14211E00BA49C7 /* PublicationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */; };
+		328D53B02B14E28400BA49C7 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 328D53AF2B14E28400BA49C7 /* .gitattributes */; };
 		4967A8482B0F4B2D00EDA815 /* ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967A8472B0F4B2D00EDA815 /* ChatApp.swift */; };
 		4967A84A2B0F4B2D00EDA815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967A8492B0F4B2D00EDA815 /* ContentView.swift */; };
 		4967A84C2B0F4B2E00EDA815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4967A84B2B0F4B2E00EDA815 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		328D53A62B1399CB00BA49C7 /* PublicationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationCardView.swift; sourceTree = "<group>"; };
 		328D53A82B139C9900BA49C7 /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
 		328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationDetailView.swift; sourceTree = "<group>"; };
+		328D53AF2B14E28400BA49C7 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		4967A8442B0F4B2D00EDA815 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4967A8472B0F4B2D00EDA815 /* ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatApp.swift; sourceTree = "<group>"; };
 		4967A8492B0F4B2D00EDA815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		4967A83B2B0F4B2D00EDA815 = {
 			isa = PBXGroup;
 			children = (
+				328D53AF2B14E28400BA49C7 /* .gitattributes */,
 				4967A8552B0F4C0700EDA815 /* .gitignore */,
 				4967A8462B0F4B2D00EDA815 /* Chat */,
 				4967A8452B0F4B2D00EDA815 /* Products */,
@@ -278,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328D53B02B14E28400BA49C7 /* .gitattributes in Resources */,
 				4967A84F2B0F4B2E00EDA815 /* Preview Assets.xcassets in Resources */,
 				647AEFF32B0F764500C70099 /* GoogleService-Info.plist in Resources */,
 				4967A8562B0F4C0700EDA815 /* .gitignore in Resources */,

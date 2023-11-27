@@ -14,17 +14,21 @@ struct SpaceSlideCardView: View {
 
             VStack {
                 NavigationLink(destination: PublicationDetailView(isShowingSideMenu: .constant(false), publication: publication)) {
-                    Text(publication.space.description)
-                    
-                    Image("img_placeholder")
-                        .resizable()
-                        .scaledToFit()
-                        .padding(.vertical)
-                    
-                    Rectangle()
-                        .fill(Color.grayPwC)
-                        .frame(height: 1)
-                        .edgesIgnoringSafeArea(.horizontal)
+                    VStack(alignment: .leading){
+                        Text(publication.space.description)
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(Color.black)
+                        
+                        Image("img_placeholder")
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.vertical)
+                        
+                        Rectangle()
+                            .fill(Color.grayPwC)
+                            .frame(height: 1)
+                            .edgesIgnoringSafeArea(.horizontal)
+                    }
                 }
                 
                 NavigationLink(destination: SpaceDetailView(isShowingSideMenu: .constant(false), space: publication.space)) {

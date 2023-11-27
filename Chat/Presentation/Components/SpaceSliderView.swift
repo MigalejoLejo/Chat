@@ -16,7 +16,7 @@ struct SpaceSliderView: View {
     var body: some View {
         VStack {
             TabView(selection: $currentIndex) {
-                ForEach(spaces.indices, id: \.self) { index in
+                ForEach(publications.indices, id: \.self) { index in
                     SpaceSlideCardView(publication: publications[index])
                         .tag(index)
                         .padding(.horizontal)

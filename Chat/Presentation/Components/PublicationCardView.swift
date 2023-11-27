@@ -15,47 +15,51 @@ struct PublicationCardView: View {
     var body: some View {
         NavigationLink(destination: PublicationDetailView(isShowingSideMenu: $isShowingSideMenu, publication: publication)) {
             VStack (alignment: .leading) {
-                HStack{
-                    Image(publication.space.imageName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 15, height: 15)
-                        .padding([.vertical, .trailing], 6)
-
-                    Text(publication.space.name)
+                NavigationLink(destination: SpaceDetailView(isShowingSideMenu: $isShowingSideMenu, space: publication.space)) {
+                    
+                    HStack{
+                        Image(publication.space.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 15, height: 15)
+                            .padding([.vertical, .trailing], 6)
+                        
+                        Text(publication.space.name)
                             .foregroundStyle(Color.black)
                             .font(.custom("", size: 12))
-
+                        
                         Text("1h")
                             .foregroundStyle(Color.gray)
                             .font(.custom("", size: 12))
-                    
-                    Spacer()
-                }
-                .padding(.top, 5)
-                
-                HStack {
-                    Image("avatar_placeholder")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                        .padding([.vertical, .trailing], 6)
-
-                    VStack(alignment: .leading) {
-                        Text(publication.author)
-                            .font(.headline)
-                            .foregroundStyle(Color.black)
-                        Text("\(publication.authorPosition)")
-                            .foregroundStyle(Color.gray)
-                            .font(.custom("", size: 12))
+                        
+                        Spacer()
                     }
-                    Spacer()
+                    .padding(.top, 5)
                 }
                 
-                Text(publication.space.description)
-                    .multilineTextAlignment(.leading)
-                    .foregroundStyle(Color.black)
-
+                    HStack {
+                        Image("avatar_placeholder")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .padding([.vertical, .trailing], 6)
+                        
+                        VStack(alignment: .leading) {
+                            Text(publication.author)
+                                .font(.headline)
+                                .foregroundStyle(Color.black)
+                            Text("\(publication.authorPosition)")
+                                .foregroundStyle(Color.gray)
+                                .font(.custom("", size: 12))
+                        }
+                        Spacer()
+                    }
+                    
+                    Text(publication.space.description)
+                        .multilineTextAlignment(.leading)
+                        .foregroundStyle(Color.black)
+                    
+                
                 
                 Rectangle()
                     .fill(Color.grayPwC)
@@ -65,12 +69,22 @@ struct PublicationCardView: View {
                 
                 HStack{
                     Spacer()
-                    Image("ic_heart")
-                        .resizable()
-                        .frame(width: 24, height: 24)
-                    Image("ic_share")
-                        .resizable()
-                        .frame(width: 24, height: 24)
+                    
+                    Button(action: {
+                        print("Botón Like presionado")
+                    }) {
+                        Image("ic_heart")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                    }
+                    
+                    Button(action: {
+                        print("Botón Share presionado")
+                    }) {
+                        Image("ic_share")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                    }
                 }
                 .padding(.bottom)
             }
