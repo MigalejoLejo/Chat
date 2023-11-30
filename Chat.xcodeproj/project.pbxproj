@@ -180,6 +180,7 @@
 		647AEFF52B0F779E00C70099 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				64F56F452B1893A4001C5D73 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -254,6 +255,13 @@
 				328D53B12B14FE6800BA49C7 /* DropdownMenuView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		64F56F452B1893A4001C5D73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

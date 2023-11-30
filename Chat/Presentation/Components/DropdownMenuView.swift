@@ -27,8 +27,7 @@ struct DropdownMenuView: View {
                 if isMenuVisible {
                     VStack (alignment: .leading){
                         Divider()
-                        SideMenuButtonView(categoryText: "Últimas publicaciones", categoryImage: "ic_time", action: {
-                            print("Últimas publicaciones pulsado")})
+                        SideMenuButtonView(categoryText: "Últimas publicaciones", categoryImage: "ic_time", action: {print("Últimas publicaciones pulsado")})
                         SideMenuButtonView(categoryText: "Publicaciones destacadas", categoryImage: "ic_newspaper", action: {print("Publicaciones destacadas pulsado")})
                     }
                 }
