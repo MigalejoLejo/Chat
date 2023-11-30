@@ -29,6 +29,7 @@ struct LoginView: View {
             
             Button("Iniciar Sesión") {
                 authViewModel.login(email: email, password: password)
+                
             }
             .frame(maxWidth: .infinity)
             .padding()

@@ -9,5 +9,11 @@ import Foundation
 
 struct User {
     var id: String
-    var name: String
+    var firstName: String
+    var lastName: String
+    var email: String
+    var employeePositions: [CompanyID: EmployeePosition]
 }
+
+typealias CompanyID = String
+typealias EmployeePosition = String

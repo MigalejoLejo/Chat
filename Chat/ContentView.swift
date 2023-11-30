@@ -16,7 +16,7 @@ struct ContentView: View {
             if (authViewModel.isAuthenticated && authViewModel.isRegistered) {
                 MainTabView(isShowingSideMenu: $isShowingSideMenu)
             } else if authViewModel.isAuthenticated {
-                RegisterView()
+                RegFirstView()
             } else {
                 LoginView(isShowingSideMenu: $isShowingSideMenu)
             }

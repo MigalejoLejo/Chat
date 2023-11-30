@@ -10,6 +10,7 @@ import Foundation
 
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
 import Combine
 import SwiftUI
 
@@ -31,6 +32,24 @@ class RegistrationService {
             }
         }
  
+   
+    static func registerUserToDB (user: User, completion: @escaping (Result<User, Error>) -> Void) {
+        let db = Firestore.firestore()
+        
+        // Aquí el usuario se ha creado correctamente, procedemos a guardar los datos adicionales en Firestore
+        db.collection("users").document(user.id).setData([
+            "firstName": user.firstName,
+            "lastName": user.lastName,
+            "email": user.email,
+            "employeePositions": user.employeePositions
+        ]) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(user))
+            }
+        }
+    }
     
     
     

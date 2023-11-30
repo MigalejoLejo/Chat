@@ -15,7 +15,9 @@ class AuthService {
 //    @Published var user: User?
     @Published var userUID: String?
     @Published var userName: String? = nil
+    @Published var email: String? = nil
     @Published var hasFetchedUserName = false
+    
     
     static let shared = AuthService()
 
@@ -26,6 +28,7 @@ class AuthService {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             if let user = result?.user {
                 self?.userUID = user.uid
+                self?.email = user.email
                 completion(.success(user.uid)) // Envía éxito con el UID del usuario
             } else if let error = error {
                 completion(.failure(error)) // Envía el error
