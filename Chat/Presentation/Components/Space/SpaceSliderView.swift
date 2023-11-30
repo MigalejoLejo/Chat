@@ -48,7 +48,7 @@ struct SpaceSliderView: View {
     }
     
     private func setupTimer() {
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
             withAnimation {
                 currentIndex = currentIndex < spaces.count - 1 ? currentIndex + 1 : 0
             }

@@ -19,6 +19,7 @@
 		328D53A72B1399CB00BA49C7 /* PublicationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53A62B1399CB00BA49C7 /* PublicationCardView.swift */; };
 		328D53A92B139C9900BA49C7 /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53A82B139C9900BA49C7 /* Publication.swift */; };
 		328D53AB2B14211E00BA49C7 /* PublicationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */; };
+<<<<<<< HEAD
 		4918ABBB2B15174A007E35C9 /* .gitattribute in Resources */ = {isa = PBXBuildFile; fileRef = 4918ABBA2B15174A007E35C9 /* .gitattribute */; };
 		4932CE972B17968B007E1A4F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932CE962B17968B007E1A4F /* RegistrationViewModel.swift */; };
 		4932CE9D2B17AD1B007E1A4F /* RegSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932CE9C2B17AD1B007E1A4F /* RegSecondView.swift */; };
@@ -26,6 +27,12 @@
 		4932CEA12B17B2FF007E1A4F /* RegButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932CEA02B17B2FF007E1A4F /* RegButtonLabel.swift */; };
 		4932CEA42B17C60E007E1A4F /* RegFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932CEA32B17C60E007E1A4F /* RegFirstView.swift */; };
 		4932CEA72B17C6BD007E1A4F /* RegTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932CEA62B17C6BD007E1A4F /* RegTextFieldModifier.swift */; };
+=======
+		328D53B02B14E28400BA49C7 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 328D53AF2B14E28400BA49C7 /* .gitattributes */; };
+		328D53B22B14FE6800BA49C7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53B12B14FE6800BA49C7 /* DropdownMenuView.swift */; };
+		328D53B62B163C7F00BA49C7 /* SideMenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53B52B163C7F00BA49C7 /* SideMenuTitleView.swift */; };
+		328D53B82B163EC800BA49C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D53B72B163EC800BA49C7 /* DataService.swift */; };
+>>>>>>> 5d8d111128a44ebaaad44c359bc25077cfcb5ff8
 		4967A8482B0F4B2D00EDA815 /* ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967A8472B0F4B2D00EDA815 /* ChatApp.swift */; };
 		4967A84A2B0F4B2D00EDA815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967A8492B0F4B2D00EDA815 /* ContentView.swift */; };
 		4967A84C2B0F4B2E00EDA815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4967A84B2B0F4B2E00EDA815 /* Assets.xcassets */; };
@@ -34,7 +41,6 @@
 		498C3D092B0FB48D00EF74E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 498C3D082B0FB48D00EF74E6 /* FirebaseAuth */; };
 		498C3D0B2B0FB48D00EF74E6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 498C3D0A2B0FB48D00EF74E6 /* FirebaseFirestore */; };
 		498C3D6B2B1495A200EF74E6 /* ChatContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */; };
-		498C3D6D2B1495CC00EF74E6 /* ChatContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */; };
 		498C3D712B14AC2400EF74E6 /* PasswordlessLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D702B14AC2400EF74E6 /* PasswordlessLoginView.swift */; };
 		498C3D762B14E57E00EF74E6 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D752B14E57E00EF74E6 /* RegistrationView.swift */; };
 		498C3D782B14E78200EF74E6 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C3D772B14E78200EF74E6 /* RegistrationService.swift */; };
@@ -66,6 +72,7 @@
 		328D53A62B1399CB00BA49C7 /* PublicationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationCardView.swift; sourceTree = "<group>"; };
 		328D53A82B139C9900BA49C7 /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
 		328D53AA2B14211E00BA49C7 /* PublicationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationDetailView.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		4918ABBA2B15174A007E35C9 /* .gitattribute */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattribute; sourceTree = "<group>"; };
 		4932CE962B17968B007E1A4F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4932CE9C2B17AD1B007E1A4F /* RegSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegSecondView.swift; sourceTree = "<group>"; };
@@ -73,6 +80,12 @@
 		4932CEA02B17B2FF007E1A4F /* RegButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegButtonLabel.swift; sourceTree = "<group>"; };
 		4932CEA32B17C60E007E1A4F /* RegFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegFirstView.swift; sourceTree = "<group>"; };
 		4932CEA62B17C6BD007E1A4F /* RegTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTextFieldModifier.swift; sourceTree = "<group>"; };
+=======
+		328D53AF2B14E28400BA49C7 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		328D53B12B14FE6800BA49C7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
+		328D53B52B163C7F00BA49C7 /* SideMenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTitleView.swift; sourceTree = "<group>"; };
+		328D53B72B163EC800BA49C7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+>>>>>>> 5d8d111128a44ebaaad44c359bc25077cfcb5ff8
 		4967A8442B0F4B2D00EDA815 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4967A8472B0F4B2D00EDA815 /* ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatApp.swift; sourceTree = "<group>"; };
 		4967A8492B0F4B2D00EDA815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,7 +93,6 @@
 		4967A84E2B0F4B2E00EDA815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4967A8552B0F4C0700EDA815 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		498C3D6A2B1495A200EF74E6 /* ChatContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContactList.swift; sourceTree = "<group>"; };
-		498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContact.swift; sourceTree = "<group>"; };
 		498C3D702B14AC2400EF74E6 /* PasswordlessLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordlessLoginView.swift; sourceTree = "<group>"; };
 		498C3D752B14E57E00EF74E6 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		498C3D772B14E78200EF74E6 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
@@ -112,6 +124,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		4932CE9B2B17A4C2007E1A4F /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +150,26 @@
 				4932CEA62B17C6BD007E1A4F /* RegTextFieldModifier.swift */,
 			);
 			path = Modifiers;
+=======
+		328D53B32B163C3700BA49C7 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				328D539E2B12FF9400BA49C7 /* SpaceCardView.swift */,
+				328D53A22B13836300BA49C7 /* SpaceSliderView.swift */,
+				328D53A42B1389E900BA49C7 /* SpaceSlideCardView.swift */,
+			);
+			path = Space;
+			sourceTree = "<group>";
+		};
+		328D53B42B163C5100BA49C7 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				64B48BDC2B10CC7700864377 /* SideMenuView.swift */,
+				328D53942B12DFB300BA49C7 /* SideMenuButtonView.swift */,
+				328D53B52B163C7F00BA49C7 /* SideMenuTitleView.swift */,
+			);
+			path = SideMenu;
+>>>>>>> 5d8d111128a44ebaaad44c359bc25077cfcb5ff8
 			sourceTree = "<group>";
 		};
 		4967A83B2B0F4B2D00EDA815 = {
@@ -180,14 +213,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		498C3D722B14B18700EF74E6 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				498C3D6C2B1495CC00EF74E6 /* ChatContact.swift */,
-			);
-			path = Chat;
-			sourceTree = "<group>";
-		};
 		647AEFF42B0F779700C70099 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +225,7 @@
 		647AEFF52B0F779E00C70099 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				64F56F452B1893A4001C5D73 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -250,6 +276,7 @@
 			children = (
 				647AF0192B0F839700C70099 /* AuthService.swift */,
 				498C3D772B14E78200EF74E6 /* RegistrationService.swift */,
+				328D53B72B163EC800BA49C7 /* DataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -268,17 +295,21 @@
 		64B48BD72B109A8900864377 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				498C3D722B14B18700EF74E6 /* Chat */,
+				328D53B42B163C5100BA49C7 /* SideMenu */,
+				328D53B32B163C3700BA49C7 /* Space */,
 				64B48BD82B109A9800864377 /* Colors.swift */,
 				64B48BDA2B109ECA00864377 /* ToolbarModifier.swift */,
-				64B48BDC2B10CC7700864377 /* SideMenuView.swift */,
-				328D53942B12DFB300BA49C7 /* SideMenuButtonView.swift */,
-				328D539E2B12FF9400BA49C7 /* SpaceCardView.swift */,
-				328D53A22B13836300BA49C7 /* SpaceSliderView.swift */,
-				328D53A42B1389E900BA49C7 /* SpaceSlideCardView.swift */,
 				328D53A62B1399CB00BA49C7 /* PublicationCardView.swift */,
+				328D53B12B14FE6800BA49C7 /* DropdownMenuView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		64F56F452B1893A4001C5D73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,15 +402,20 @@
 				647AEFFB2B0F785400C70099 /* Message.swift in Sources */,
 				64B48BD62B10947900864377 /* LoginViewModel.swift in Sources */,
 				4967A8482B0F4B2D00EDA815 /* ChatApp.swift in Sources */,
+				328D53B62B163C7F00BA49C7 /* SideMenuTitleView.swift in Sources */,
 				328D53A32B13836300BA49C7 /* SpaceSliderView.swift in Sources */,
 				498C3D6B2B1495A200EF74E6 /* ChatContactList.swift in Sources */,
 				64B48BCF2B1093EA00864377 /* MainTabView.swift in Sources */,
 				647AF01A2B0F839700C70099 /* AuthService.swift in Sources */,
 				64B48BCD2B1093E100864377 /* ChatView.swift in Sources */,
+				328D53B22B14FE6800BA49C7 /* DropdownMenuView.swift in Sources */,
 				498C3D782B14E78200EF74E6 /* RegistrationService.swift in Sources */,
 				64B48BDD2B10CC7700864377 /* SideMenuView.swift in Sources */,
+<<<<<<< HEAD
 				4932CEA12B17B2FF007E1A4F /* RegButtonLabel.swift in Sources */,
 				498C3D6D2B1495CC00EF74E6 /* ChatContact.swift in Sources */,
+=======
+>>>>>>> 5d8d111128a44ebaaad44c359bc25077cfcb5ff8
 				328D53952B12DFB300BA49C7 /* SideMenuButtonView.swift in Sources */,
 				647AF0172B0F835500C70099 /* LoginView.swift in Sources */,
 				647AEFF92B0F783900C70099 /* User.swift in Sources */,
@@ -392,7 +428,11 @@
 				4932CE9D2B17AD1B007E1A4F /* RegSecondView.swift in Sources */,
 				64B48BD42B10947900864377 /* AuthViewModel.swift in Sources */,
 				328D53A92B139C9900BA49C7 /* Publication.swift in Sources */,
+<<<<<<< HEAD
 				4932CE9F2B17B2A0007E1A4F /* RegImagePickerLabel.swift in Sources */,
+=======
+				328D53B82B163EC800BA49C7 /* DataService.swift in Sources */,
+>>>>>>> 5d8d111128a44ebaaad44c359bc25077cfcb5ff8
 				498C3D712B14AC2400EF74E6 /* PasswordlessLoginView.swift in Sources */,
 				328D53AB2B14211E00BA49C7 /* PublicationDetailView.swift in Sources */,
 				328D53A72B1399CB00BA49C7 /* PublicationCardView.swift in Sources */,

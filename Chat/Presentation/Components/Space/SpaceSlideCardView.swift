@@ -24,10 +24,7 @@ struct SpaceSlideCardView: View {
                             .scaledToFit()
                             .padding(.vertical)
                         
-                        Rectangle()
-                            .fill(Color.grayPwC)
-                            .frame(height: 1)
-                            .edgesIgnoringSafeArea(.horizontal)
+                        Divider()
                     }
                 }
                 
