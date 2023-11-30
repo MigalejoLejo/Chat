@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
-
-@Binding var isShowingSideMenu: Bool
+    let publications: [Publication] = publicationData
+    @Binding var isShowingSideMenu: Bool
+    @State private var isMenuVisible = false
 
     var body: some View {
         NavigationView {
             ScrollView{
                 ZStack{
-                    VStack {
-                        Text("Home")
-                        ForEach(1...40, id: \.self) { _ in
-                            Text("Este es el texto que se mostrará 15 veces.")
+                    VStack (alignment: .leading, spacing: 12){
+                        DropdownMenuView()
+                        
+                        ForEach(publications) { publication in
+                            PublicationCardView(publication: publication, isShowingSideMenu: $isShowingSideMenu)
                         }
                     }
-                    .frame(maxWidth: .infinity)
+                    .padding()
                     .customToolbar(
                         isShowingSideMenu: $isShowingSideMenu,
                         title: "Inicio",

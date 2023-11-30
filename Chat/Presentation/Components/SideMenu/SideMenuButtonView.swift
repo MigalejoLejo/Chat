@@ -2,8 +2,6 @@
 //  SideMenuView.swift
 //  Chat
 //
-//  Created by Daniel Chinea on 24/11/23.
-//
 
 import SwiftUI
 

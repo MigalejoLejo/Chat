@@ -61,11 +61,7 @@ struct PublicationCardView: View {
                     
                 
                 
-                Rectangle()
-                    .fill(Color.grayPwC)
-                    .frame(height: 1)
-                    .edgesIgnoringSafeArea(.horizontal)
-                    .padding(.vertical, 5)
+                Divider()
                 
                 HStack{
                     Spacer()
@@ -94,7 +90,6 @@ struct PublicationCardView: View {
         .background(Color.white)
         .cornerRadius(5)
         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
-        .frame(maxWidth: .infinity)
 
     }
 }

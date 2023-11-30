@@ -19,7 +19,7 @@ struct Publication: Identifiable {
     let likes: Int
 }
 
-let spacesExampleData = Space(id: UUID(), name: "Ibex35", memberCount: 238, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", imageName: "ibex35")
+let spacesExampleData = Space(id: UUID(), name: "Ibex35", memberCount: 238, description: "Iberdrola is a multinational electric utility company headquartered in Bilbao, Spain. It is one of the largest.", imageName: "avatar_placeholder")
 
 
 let publicationData = [

@@ -2,8 +2,6 @@
 //  SideMenuView.swift
 //  Chat
 //
-//  Created by Daniel Chinea on 24/11/23.
-//
 
 import SwiftUI
 
@@ -47,20 +45,8 @@ struct SideMenuView: View {
                         }
                         
                         ScrollView(.vertical, showsIndicators: false){
-                            
                             VStack(alignment: .leading){
-                                Rectangle()
-                                    .fill(Color.grayPwC)
-                                    .frame(height: 1)
-                                
-                                Text("Otras secciones")
-                                    .bold()
-                                    .padding(.vertical, 4)
-                                
-                                Rectangle()
-                                    .fill(Color.grayPwC)
-                                    .frame(height: 1)
-                                    .edgesIgnoringSafeArea(.horizontal)
+                                SideMenuTitleView(categoryTitle: "Otras secciones")
                                 
                                 SideMenuButtonView(categoryText: "Documentos", categoryImage: "ic_documents", action: { print("Documentos pulsado") })
                                 SideMenuButtonView(categoryText: "Nombramientos", categoryImage: "ic_tags", action: { print("Nombramientos pulsado") })
@@ -74,18 +60,7 @@ struct SideMenuView: View {
                             .padding(.bottom, 24)
                             
                             VStack(alignment: .leading){
-                                Rectangle()
-                                    .fill(Color.grayPwC)
-                                    .frame(height: 1)
-                                
-                                Text("Tus espacios")
-                                    .bold()
-                                    .padding(.vertical, 4)
-                                
-                                Rectangle()
-                                    .fill(Color.grayPwC)
-                                    .frame(height: 1)
-                                    .edgesIgnoringSafeArea(.horizontal)
+                                SideMenuTitleView(categoryTitle: "Tus espacios")
                                 
                                 SideMenuButtonView(categoryText: "Documentos", categoryImage: "ic_documents", action: { print("Documentos pulsado") })
                                 SideMenuButtonView(categoryText: "Nombramientos", categoryImage: "ic_tags", action: { print("Nombramientos pulsado") })
@@ -98,10 +73,7 @@ struct SideMenuView: View {
                             
                             Spacer()
                             
-                            Rectangle()
-                                .fill(Color.grayPwC)
-                                .frame(height: 1)
-                                .edgesIgnoringSafeArea(.horizontal)
+                            Divider()
                             
                             HStack{
                                 SideMenuButtonView(categoryText: "Configuración", categoryImage: "ic_settings", action: { print("Configuración pulsado") })
